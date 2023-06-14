@@ -4,7 +4,7 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 import "./SpeechRecognizer.css"
 
-function SpeechRecognizer() {
+function SpeechRecognizer({ setInputText}) {
   const {
     transcript,
     listening,
@@ -23,6 +23,7 @@ function SpeechRecognizer() {
             <button onClick={SpeechRecognition.stopListening}>Stop</button>
             <button onClick={resetTranscript}>Reset</button>
             <p>{transcript}</p>
+            {!listening && setInputText(transcript)}
         </div>
     </div>
     </>
