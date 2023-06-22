@@ -13,7 +13,7 @@ function App() {
       <SpeechRecognizer setInputText={setInputText}/>
       <TTS inputText={inputText}/>
       <VideoEmbedder embedId="PJbIhBmSR7Y"/>
-      <QRCodeGenerator url="https://www.youtube.com/watch?v=PJbIhBmSR7Y"/>
+      <QRCodeGenerator url="https://www.youtube.com/watch?v=xuCn8ux2gbs"/>
       <VideoCall />
     </>
   );
