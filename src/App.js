@@ -7,6 +7,7 @@ import QRCodeGenerator from './Components/QRCodeGenerator/QRCodeGenerator';
 import VideoCall from './Components/VideoCall/VideoCall';
 import Map from './Components/Map/Map';
 import MUIComponents from './Components/MUIComponents/MUIComponents';
+import ChatBot from './Components/ChatBot/ChatBot';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -19,6 +20,7 @@ function App() {
       <VideoCall />
       <Map />
       <MUIComponents />
+      <ChatBot />
     </>
   );
 }
