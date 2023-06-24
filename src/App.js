@@ -5,6 +5,7 @@ import TTS from './Components/TTS/TTS';
 import VideoEmbedder from './Components/VideoEmbedder/VideoEmbedder';
 import QRCodeGenerator from './Components/QRCodeGenerator/QRCodeGenerator';
 import VideoCall from './Components/VideoCall/VideoCall';
+import Map from './Components/Map/Map';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -15,6 +16,7 @@ function App() {
       <VideoEmbedder embedId="xuCn8ux2gbs"/>
       <QRCodeGenerator url="https://www.youtube.com/watch?v=xuCn8ux2gbs"/>
       <VideoCall />
+      <Map />
     </>
   );
 }
