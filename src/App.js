@@ -6,6 +6,7 @@ import VideoEmbedder from './Components/VideoEmbedder/VideoEmbedder';
 import QRCodeGenerator from './Components/QRCodeGenerator/QRCodeGenerator';
 import VideoCall from './Components/VideoCall/VideoCall';
 import Map from './Components/Map/Map';
+import MUIComponents from './Components/MUIComponents/MUIComponents';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -17,6 +18,7 @@ function App() {
       <QRCodeGenerator url="https://www.youtube.com/watch?v=xuCn8ux2gbs"/>
       <VideoCall />
       <Map />
+      <MUIComponents />
     </>
   );
 }
