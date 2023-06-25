@@ -8,6 +8,7 @@ import VideoCall from './Components/VideoCall/VideoCall';
 import Map from './Components/Map/Map';
 import MUIComponents from './Components/MUIComponents/MUIComponents';
 import ChatBot from './Components/ChatBot/ChatBot';
+import ConsumeAPI from './Components/ConsumeAPI/ConsumeAPI';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -21,6 +22,7 @@ function App() {
       <Map />
       <MUIComponents />
       <ChatBot />
+      <ConsumeAPI />
     </>
   );
 }
