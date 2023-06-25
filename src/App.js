@@ -9,6 +9,7 @@ import Map from './Components/Map/Map';
 import MUIComponents from './Components/MUIComponents/MUIComponents';
 import ChatBot from './Components/ChatBot/ChatBot';
 import ConsumeAPI from './Components/ConsumeAPI/ConsumeAPI';
+import Timer from './Components/Timer/Timer';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -23,6 +24,7 @@ function App() {
       <MUIComponents />
       <ChatBot />
       <ConsumeAPI />
+      <Timer />
     </>
   );
 }
