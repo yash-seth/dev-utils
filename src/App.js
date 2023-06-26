@@ -12,6 +12,7 @@ import ConsumeAPI from './Components/ConsumeAPI/ConsumeAPI';
 import Timer from './Components/Timer/Timer';
 import CaptureImage from './Components/CaptureImage/CaptureImage';
 import CaptureVideo from './Components/CaptureVideo/CaptureVideo';
+import Chat from './Components/Chat/Chat';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -29,6 +30,7 @@ function App() {
       <Timer />
       <CaptureImage />
       <CaptureVideo />
+      <Chat />
     </>
   );
 }
