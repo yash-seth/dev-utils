@@ -1,65 +1,60 @@
 import React from 'react'
 import "./ChatBot.css"
 import CB from 'react-simple-chatbot';
-import ChatBotOptionRedirect from './ChatBotOptionRedirect';
+import Translate from './Translate';
 
 function ChatBot() {
   return (
     <div className="chatbot-main">
         <h1>Chatbot module</h1>
-        <CB floating="true" steps={[
+        <CB headerTitle="Translat-o-bot" floating="true" steps={[
       {
-        id: '1',
-        message: 'How can I help you today?',
-        trigger: '2',
+        id: 'intro-message',
+        message: 'What would you like to translate?',
+        trigger: 'input',
       },
       {
-        id: '2',
+        id: 'input',
+        user: true,
+        trigger: 'language-options-message',
+      },
+      {
+        id: 'language-options-message',
+        message: 'Which language?',
+        trigger: "language-options"
+      },
+      {
+        id: 'language-options',
         options: [
-          { value: 1, label: 'Homepage', trigger: '3' },
-          { value: 2, label: 'Donate', trigger: '4' },
-          { value: 3, label: 'Contact Us', trigger: '5' },
+          { value: 1, label: 'Hindi', trigger: 'translation' },
+          { value: 2, label: 'French', trigger: 'translation' },
+          { value: 3, label: 'Spanish', trigger: 'translation' },
         ],
       },
       {
-        id: '3',
+        id: 'translation',
         component: (
-            <ChatBotOptionRedirect url={"https://www.google.com"} option={"Homepage"}/>
+            <Translate />
           ),
-          trigger: '6'
+          trigger: 'intro-message'
       },
-      {
-        id: '4',
-        component: (
-            <ChatBotOptionRedirect url={"https://www.google.com"} option={"Donate"}/>
-          ),
-          trigger: '6'
-      },
-      {
-        id: '5',
-        component: (
-            <ChatBotOptionRedirect url={"https://www.google.com"} option={"Contact Us"}/>
-          ),
-          trigger: '6',
-          hideInput: true
-      },
-      {
-        id: '6',
-        message: "Anything else I can help you with?",
-        trigger: 'options'
-      },
-      {
-        id: "options",
-        options: [
-            { value: 'yes', label: 'Yes', trigger: '2' },
-            { value: 'no', label: 'No', trigger: 'end-message' },
-          ],
-      },
-      {
-        id: 'end-message',
-        message: "Have a great day ahead!",
-        end: true
-      },
+      // {
+      //   id: 'end-message-options',
+      //   message: "Anything else I can help you with?",
+      //   trigger: "end-options"
+      // },
+      // {
+      //   id: 'end-options',
+      //   options: [
+      //     { value: 'yes', label: 'Yes', trigger: 'intro-message' },
+      //     { value: 'no', label: 'No', trigger: 'exit' },
+      //   ]
+      // },
+      // {
+      //   id: 'exit',
+      //   message: "Have a great day ahead!",
+      //   end: true
+      // }
     ]} />
     </div>
   )
