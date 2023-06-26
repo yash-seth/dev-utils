@@ -10,6 +10,7 @@ import MUIComponents from './Components/MUIComponents/MUIComponents';
 import ChatBot from './Components/ChatBot/ChatBot';
 import ConsumeAPI from './Components/ConsumeAPI/ConsumeAPI';
 import Timer from './Components/Timer/Timer';
+import CaptureImage from './Components/CaptureImage/CaptureImage';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -25,6 +26,7 @@ function App() {
       <ChatBot />
       <ConsumeAPI />
       <Timer />
+      <CaptureImage />
     </>
   );
 }
