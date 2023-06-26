@@ -55,6 +55,7 @@ function CaptureVideo() {
     <>
     {/* Make audio true to record audio as well */}
     <div className='capture-video-main'>
+        <h4>Live Feed</h4>
       <Webcam audio={false} ref={webcamRef} />
       {capturing ? (
         <button onClick={handleStopCaptureClick}>Stop Capture</button>

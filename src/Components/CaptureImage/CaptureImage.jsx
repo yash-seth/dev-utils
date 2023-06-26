@@ -38,9 +38,11 @@ function CaptureImage() {
             )}
             </Webcam>
         <div>
-            <h4>Captured Image</h4>
             {imgSrc !== "" && (
-            <img src={`${imgSrc}`} alt="uploads" className="image" />
+                <>
+                    <h4>Captured Image</h4>
+                    <img src={`${imgSrc}`} alt="uploads" className="image" />
+                </>
             )}
         </div>
       </div>
