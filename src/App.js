@@ -16,6 +16,7 @@ import Chat from './Components/Chat/Chat';
 import ReadCSV from './Components/ReadCSV/ReadCSV';
 import BarChart from './Components/BarChart/BarChart';
 import FileActions from './Components/FileActions/FileActions';
+import FirebaseAuth from './Components/FirebaseAuth/FirebaseAuth';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -37,6 +38,7 @@ function App() {
       <ReadCSV />
       <BarChart />
       <FileActions />
+      <FirebaseAuth />
     </>
   );
 }
