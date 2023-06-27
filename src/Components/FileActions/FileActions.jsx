@@ -1,5 +1,5 @@
 import { useState } from "react";
-import storage from "../../FirebaseConfig.js";
+import { storage } from "../../FirebaseConfig.js";
 import {
   ref,
   uploadBytesResumable,
