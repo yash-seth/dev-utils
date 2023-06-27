@@ -15,6 +15,7 @@ import CaptureVideo from './Components/CaptureVideo/CaptureVideo';
 import Chat from './Components/Chat/Chat';
 import ReadCSV from './Components/ReadCSV/ReadCSV';
 import BarChart from './Components/BarChart/BarChart';
+import FileActions from './Components/FileActions/FileActions';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -35,6 +36,7 @@ function App() {
       <Chat />
       <ReadCSV />
       <BarChart />
+      <FileActions />
     </>
   );
 }
