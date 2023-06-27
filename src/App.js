@@ -14,6 +14,7 @@ import CaptureImage from './Components/CaptureImage/CaptureImage';
 import CaptureVideo from './Components/CaptureVideo/CaptureVideo';
 import Chat from './Components/Chat/Chat';
 import ReadCSV from './Components/ReadCSV/ReadCSV';
+import BarChart from './Components/BarChart/BarChart';
 
 function App() {
   const [inputText, setInputText] = useState("")
@@ -33,6 +34,7 @@ function App() {
       <CaptureVideo />
       <Chat />
       <ReadCSV />
+      <BarChart />
     </>
   );
 }
