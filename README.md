@@ -1,5 +1,5 @@
-# Accessibility Helper Modules
-Helper modules that are plug and play - starting at the cost of absolutely free. All you have to do is `npm i` and you're ready to go!
+# Developer Utilities
+Devloper Utility modules that are plug and play - starting at the cost of absolutely free. All you have to do is `npm i` and you're ready to go!
 
 ## Modules
 - Speech to Text
